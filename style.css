@@ -1,0 +1,14 @@
+.sidebar{
+    height: 800px;
+    width: 250px;
+    background-color: plum;
+    border-radius: 5px;
+}
+
+
+
+.icon{
+    width: 40px;
+    height: 30px;
+   
+}
