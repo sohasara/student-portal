@@ -103,10 +103,19 @@
 }
 .welcome_text{
     padding-left: 100px;
+    font-size: 30px;
+    padding-bottom: 10px;
     
+
+}
+
+.welcome_text p{
+    padding-top: 20px;
+    font-size: 20px;
 }
 .welcome_icon{
     height: 200px;
     width: 200px;
     display: flex;
+    
 }
