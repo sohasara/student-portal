@@ -181,7 +181,7 @@
 .enrolled_course{
 height: 150px;
 width: 450px;
-background-color: rgb(175, 113, 175);
+background-color: rgb(224, 199, 224);
 border-radius: 15px;
 display: grid;
 justify-content: center;
@@ -191,4 +191,9 @@ justify-content: center;
    
     display: flex;
     justify-content: space-evenly; 
+}
+
+.enrolled_course:hover{
+    border: 3px solid rgb(90, 14, 90);
+
 }
