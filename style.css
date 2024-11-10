@@ -225,3 +225,14 @@ padding-bottom: 10px;
     font-size: 20px;
     width: 250px;
 }
+
+
+/* Hide all content sections by default */
+.content-section.hidden {
+    display: none;
+}
+
+/* Show the active content section */
+.content-section {
+    display: block;
+}
