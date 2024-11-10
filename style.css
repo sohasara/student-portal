@@ -180,7 +180,15 @@
 /* bottom */
 .enrolled_course{
 height: 150px;
-width: 350px;
+width: 450px;
 background-color: rgb(175, 113, 175);
 border-radius: 15px;
+display: grid;
+justify-content: center;
+}
+
+.course{
+   
+    display: flex;
+    justify-content: space-evenly; 
 }
