@@ -8,16 +8,23 @@
   }
 
   body {
-   
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
   
     padding: 30px;
     border-radius: 20px;
   }
 
   .main{
-    width: 90%;
-    color: antiquewhite;
-    border-radius: 10px;
+    display: flex;
+      width: 95%;
+    
+      margin-top: 20px;
+      background-color: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 6px 6px 6px 6px rgba(212, 210, 210, 0.1);
   }
 
 
@@ -26,7 +33,9 @@
     height: 800px;
     width: 250px;
     background-color: rgb(90, 14, 90);
-    border-radius: 15px;
+    
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,4 +79,12 @@
 
 .sidebar_items p {
     margin: 0;
+}
+
+/* welcome dash */
+
+.welcome_dash{
+    height: 200px;
+    width: 300px;
+    color:rgb(90, 14, 90); ;
 }
