@@ -3,10 +3,22 @@
     width: 250px;
     background-color: plum;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
 }
 
 
 
 .icon{
+    color: white;
    font-size: 100px;
+   padding-left: 20px;
+   height: 120px;
+   width: 150px;
+   border-radius: 10px;
+   background-origin: border-box;
+   background-color: purple;
+
 }
