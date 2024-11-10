@@ -152,9 +152,16 @@
     font-weight: bold;
     color: black;
 }
+#icon1{
+    padding-left: 50px;
+}
+#icon2{
+    padding-left: 30px;
+}
 .finance-box i{
     font-size: 60px;
     color:rgb(90, 14, 90) ;
+   
 }
 
 .finance-box:hover{
