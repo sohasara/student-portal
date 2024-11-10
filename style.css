@@ -24,7 +24,9 @@
       background-color: white;
       border-radius: 15px;
       overflow: hidden;
-      box-shadow: 6px 6px 6px 6px rgba(212, 210, 210, 0.1);
+      /* box-shadow: 6px 6px 6px 6px rgba(212, 210, 210, 0.1); */
+
+      box-shadow: 5px 5px 5px 5px rgb(228, 226, 226);
   }
 
 
@@ -124,9 +126,10 @@
 
 /* finace body */
 
-.finace-text{
+.common-text-style{
     font-size: 30px;
     font-weight: bold;
+    padding-top: 20px;
     padding-bottom: 10px;
 }
 .finace-content{
@@ -173,4 +176,11 @@
 
 .finance-box:hover{
     border: 3px solid rgb(90, 14, 90);
+}
+/* bottom */
+.enrolled_course{
+height: 150px;
+width: 350px;
+background-color: rgb(175, 113, 175);
+border-radius: 15px;
 }
