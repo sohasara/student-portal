@@ -1,24 +1,73 @@
-.sidebar{
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+   
+  
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  .main{
+    width: 90%;
+    color: antiquewhite;
+    border-radius: 10px;
+  }
+
+
+
+.sidebar {
     height: 800px;
     width: 250px;
-    background-color: plum;
-    border-radius: 5px;
+    background-color: rgb(90, 14, 90);
+    border-radius: 15px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding-top: 20px;
-
 }
 
-
-
-.icon{
+.icon {
     color: white;
-   font-size: 100px;
-   padding-left: 20px;
-   height: 120px;
-   width: 150px;
-   border-radius: 10px;
-   background-origin: border-box;
-   background-color: purple;
+    font-size: 50px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: purple;
+    margin-bottom: 20px;
+}
 
+.sidebar_items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    
+}
+
+.sidebar_items:hover {
+    background-color: rgba(255, 255, 255, 0.459);
+    border-radius: 5px;
+  
+}
+
+.sidebar_items i {
+    font-size: 20px;
+}
+
+.sidebar_items p {
+    margin: 0;
 }
