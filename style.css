@@ -180,6 +180,9 @@
 }
 /* bottom */
 .enrolled_course{
+padding: 10px;
+padding-top: 20px;
+  
 height: 170px;
 width: 500px;
 background-color: rgb(240, 223, 240);
@@ -193,17 +196,20 @@ padding-bottom: 10px;
     color:rgb(90, 14, 90) ;
 }
 .enrolled_course p{
-    font-size: 20px;
+
+    font-size: 25px;
 }
 
 .flex-div{
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 .course{
    
     display: flex;
     justify-content: space-evenly; 
+    
 }
 
 .enrolled_course:hover{
@@ -217,4 +223,5 @@ padding-bottom: 10px;
     background-color:rgb(90, 14, 90) ;
     color: white;
     font-size: 20px;
+    width: 250px;
 }
