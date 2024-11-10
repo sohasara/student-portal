@@ -57,11 +57,12 @@
 
 .sidebar_items {
     display: flex;
+    
     align-items: center;
     gap: 10px;
     color: white;
     font-size: 18px;
-    padding: 10px 20px;
+    padding: 10px 20px ;
     cursor: pointer;
     width: 100%;
     
@@ -119,3 +120,4 @@
     display: flex;
     
 }
+
