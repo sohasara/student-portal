@@ -59,7 +59,7 @@
     display: flex;
     
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     color: white;
     font-size: 18px;
     padding: 10px 20px ;
@@ -125,7 +125,7 @@
 /* finace body */
 
 .finace-text{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     padding-bottom: 10px;
 }
@@ -135,11 +135,28 @@
     justify-content: space-evenly;
 }
 .finance-box{
+    padding-top: 10px;
     height: 200px;
-    width: 200px;
- 
+    width: 300px;
     border-radius: 15px;
-   
     box-shadow: 5px 5px 5px 5px rgb(240, 238, 238);
+    display: grid;
+    justify-content: center;
+    font-size: 30px;
+    color: purple;
+  
 
 } 
+.p-bold{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+.finance-box i{
+    font-size: 60px;
+    color:rgb(90, 14, 90) ;
+}
+
+.finance-box:hover{
+    border: 3px solid rgb(90, 14, 90);
+}
