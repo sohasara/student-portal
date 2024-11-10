@@ -19,6 +19,7 @@
   .main{
     display: flex;
       width: 95%;
+      
     
       margin-top: 20px;
       background-color: white;
@@ -179,14 +180,18 @@
 }
 /* bottom */
 .enrolled_course{
-height: 150px;
-width: 450px;
-background-color: rgb(224, 199, 224);
+height: 170px;
+width: 500px;
+background-color: rgb(240, 223, 240);
 border-radius: 15px;
 display: grid;
 justify-content: center;
+padding-bottom: 10px;
 }
-
+.enrolled_course i{
+    font-size: 80px;
+    color:rgb(90, 14, 90) ;
+}
 .course{
    
     display: flex;
@@ -196,4 +201,12 @@ justify-content: center;
 .enrolled_course:hover{
     border: 3px solid rgb(90, 14, 90);
 
+}
+
+.enroll-button{
+    border-radius: 20px;
+    padding-bottom: 10px;
+    background-color:rgb(90, 14, 90) ;
+    color: white;
+    font-size: 20px;
 }
