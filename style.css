@@ -101,3 +101,12 @@
     align-items: center;
     margin-bottom: 20px;
 }
+.welcome_text{
+    padding-left: 100px;
+    
+}
+.welcome_icon{
+    height: 200px;
+    width: 200px;
+    display: flex;
+}
