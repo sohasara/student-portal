@@ -127,4 +127,19 @@
 .finace-text{
     font-size: 20px;
     font-weight: bold;
+    padding-bottom: 10px;
 }
+.finace-content{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.finance-box{
+    height: 200px;
+    width: 200px;
+ 
+    border-radius: 15px;
+   
+    box-shadow: 5px 5px 5px 5px rgb(240, 238, 238);
+
+} 
