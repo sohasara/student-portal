@@ -1,6 +1,6 @@
 
   #schedule .main-she {
-    height: 700px;
+    height: 720px;
     width: 93%;
     padding-left: 20px;
     padding-right: 20px;
@@ -12,30 +12,32 @@
   #schedule .schedul-scetion .header {
     text-align: center;
     margin-bottom: 20px;
+    color: white;
   }
   
   #schedule .schedul-scetion .header h2 {
-    font-size: 24px;
-    color: #333;
-    margin: 0;
+    padding-top: 20px;
+    font-size: 26px;
+    color: white;
+ 
   }
   
   #schedule .info-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
-    font-size: 16px;
+   
+    font-size: 20px;
   }
   
   #schedule .info-container div {
-    color: #555;
+    color: white;
   }
   
   #schedule .table-title {
     text-align: center;
-    font-size: 18px;
+    font-size: 28px;
     font-weight: bold;
-    color: #333;
+    color: white;
     margin: 15px 0;
   }
   
@@ -55,20 +57,16 @@
   
   .routine-table th {
     background-color: #f4f4f4;
-    font-weight: bold;
-    color: #333;
+    font-weight: bolder;
+    color: rgb(90, 14, 90);
+    font-size: 20px;
   }
   
   .routine-table td {
     background-color: #fff;
-    color: #666;
+    color: rgb(100, 5, 100);
+    font-size: 20px;
   }
   
-  .routine-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
   
-  .routine-table tr:hover {
-    background-color: #f1f1f1;
-  }
   
