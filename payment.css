@@ -1,8 +1,8 @@
 
 
 .upper-box-payment{
-    display: flex;
-    justify-content: space-evenly;
+display: flex;
+justify-content: space-evenly;
 height: 250px;
 width: 90%;
 background-color: rgb(90, 14, 90);
@@ -29,27 +29,27 @@ border-radius: 15px;
           
           
 }
-table {
+.table-1 {
     width: 100%;
     border-collapse: collapse;
 }
 
-th, td {
+.table-1 th, td {
     padding: 12px;
     text-align: center;
     border: 1px solid rgb(90, 14, 90);
 }
 
-th {
+.table-1 th {
     background-color: rgb(90, 14, 90);
     color: #fff;
     font-weight: bold;
 }
 
-tr:nth-child(even) {
+.table-1 tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-tr:hover {
+.table-1 tr:hover {
     background-color: #f1f1f1;
 }
