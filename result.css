@@ -1,0 +1,53 @@
+.result-main{
+    padding-top: 30px;
+}
+
+
+.result-section{
+   height: 330px;
+    width: 92%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.result-section {
+    margin-bottom: 20px;
+    background: rgb(102, 12, 102);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.result-section h2 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.result-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.result-section  table, th, td {
+    border: 1px solid white;
+    text-align: center;
+}
+
+ .result-section  th, td {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.result-section   p {
+    color: white;
+    font-size: 26px;
+}

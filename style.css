@@ -70,7 +70,16 @@
     
 }
 
+
+/* .sidebar_items:active {
+
+    background-color:  black;
+    border-radius: 5px;
+  
+} */
+
 .sidebar_items:hover {
+
     background-color: rgba(255, 255, 255, 0.459);
     border-radius: 5px;
   
