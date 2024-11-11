@@ -1,0 +1,35 @@
+
+
+.upper-box-payment{
+    display: flex;
+    justify-content: space-evenly;
+height: 250px;
+width: 90%;
+background-color: rgb(90, 14, 90);
+border-radius: 15px;
+}
+
+.content-line{
+    padding-top: 70px;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+    text-align: center;
+  }
+  
