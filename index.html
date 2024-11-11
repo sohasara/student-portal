@@ -6,6 +6,7 @@
     <title>Portal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
 </head>
 <body>
     <div class="main">
@@ -34,6 +35,11 @@
                 <i class="fa-solid fa-calendar"></i>
                 <p>Schedule</p>
             </div>
+            <div class="sidebar_items" onclick="showSection('result')">
+                <i class="fa-solid fa-square-poll-vertical"></i>
+                <p>Result</p>
+            </div>
+
             <div class="sidebar_items" onclick="showSection('logout')">
                 <i class="fa-solid fa-sign-out-alt"></i>
                 <p>Logout</p>
@@ -98,8 +104,10 @@
 
             <!-- Profile Section -->
             <div id="profile" class="content-section hidden">
+              <div class="profile_style">
                 <h2>Profile</h2>
                 <p>View and edit your profile here.</p>
+              </div>
                 
             </div>
 
@@ -118,6 +126,11 @@
             <!-- Schedule Section -->
             <div id="schedule" class="content-section hidden">
                 <h2>Schedule</h2>
+                <p>Check your class schedule.</p>
+            </div>
+               <!-- Result Section -->
+               <div id="result" class="content-section hidden">
+                <h2>Result</h2>
                 <p>Check your class schedule.</p>
             </div>
 
