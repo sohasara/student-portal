@@ -40,7 +40,11 @@
     width: 600px;
     background-color:  white;
     border-radius: 15px;
-
+    display: grid;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    font-size: 20px;
+    color: rgb(116, 32, 116);
 }
 
 .lower-inside-box:hover{
@@ -54,4 +58,13 @@
     width: 640px;
     background-color: rgb(148, 63, 148);
     border-radius: 15px;
+}
+
+.info-div-1{
+    padding-top: 100px;
+   font-size: 25px;
+   color: rgb(116, 32, 116);
+  
+  
+   
 }
