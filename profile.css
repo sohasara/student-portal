@@ -7,7 +7,7 @@
 .upper-pro-style{
     height: 350px;
     width: 1300px;
-    background-color: rgb(148, 63, 148);
+    background-color: rgb(90, 14, 90);
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -43,7 +43,7 @@
     display: grid;
     justify-content: space-evenly;
     padding-top: 20px;
-    font-size: 20px;
+    font-size: 23px;
     color: rgb(116, 32, 116);
 }
 
@@ -56,7 +56,7 @@
    padding-top: 23px;
     height: 350px;
     width: 640px;
-    background-color: rgb(148, 63, 148);
+    background-color: rgb(90, 14, 90);
     border-radius: 15px;
 }
 
