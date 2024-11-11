@@ -39,7 +39,169 @@
                 <i class="fa-solid fa-square-poll-vertical"></i>
                 <p>Result</p>
             </div>
-
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Portal</title>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <link rel="stylesheet" href="style.css">
+                <link rel="stylesheet" href="profile.css">
+            </head>
+            <body>
+                <div class="main">
+                  
+                    <div class="sidebar">
+                        <div class="icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="sidebar_items" onclick="showSection('dashboard')">
+                            <i class="fa-solid fa-table"></i>
+                            <p>Dashboard</p>
+                        </div>
+                        <div class="sidebar_items" onclick="showSection('profile')">
+                            <i class="fa-solid fa-user"></i>
+                            <p>Profile</p>
+                        </div>
+                        <div class="sidebar_items" onclick="showSection('payments')">
+                            <i class="fa-solid fa-credit-card"></i>
+                            <p>Payments</p>
+                        </div>
+                        <div class="sidebar_items" onclick="showSection('courses')">
+                            <i class="fa-solid fa-book"></i>
+                            <p>Courses</p>
+                        </div>
+                        <div class="sidebar_items" onclick="showSection('schedule')">
+                            <i class="fa-solid fa-calendar"></i>
+                            <p>Schedule</p>
+                        </div>
+                        <div class="sidebar_items" onclick="showSection('result')">
+                            <i class="fa-solid fa-square-poll-vertical"></i>
+                            <p>Result</p>
+                        </div>
+            
+                        <div class="sidebar_items" onclick="showSection('logout')">
+                            <i class="fa-solid fa-sign-out-alt"></i>
+                            <p>Logout</p>
+                        </div>
+                    </div>
+            
+                    <div class="content">
+                        <!-- Dashboard Section (Initially Visible) -->
+                        <div id="dashboard" class="content-section">
+                            <div class="welcome_dash">
+                                <div class="welcome_text">
+                                    <h2>Welcome back, Nadia!</h2>
+                                    <p>Always stay updated in your student portal.</p>
+                                </div>
+                                <div class="welcome_icon">
+                                    <img src="gaduation.png" alt="">
+                                </div>
+                            </div>
+            
+                            <div class="finance">
+                                <div class="common-text-style">
+                                    <p>Finance</p>
+                                </div>
+                                <div class="finace-content">
+                                    <div class="finance-box">
+                                        <p class="p-bold">Total payable</p>
+                                        <i class="fa-solid fa-sack-dollar" id="icon1"></i>
+                                        <p id="p1">$10000</p>
+                                    </div>
+                                    <div class="finance-box">
+                                        <p class="p-bold">Total paid</p>
+                                        <i class="fa-solid fa-hand-holding-dollar" id="icon2"></i>
+                                        <p id="p2">$1000</p>
+                                    </div>
+                                    <div class="finance-box">
+                                        <p class="p-bold">Others</p>
+                                        <i class="fa-solid fa-comments-dollar"></i>
+                                        <p>$10000</p>
+                                    </div>
+                                </div>
+                                <div class="common-text-style">
+                                    <p>Enrolled Course</p>
+                                </div>
+                                <div class="course">
+                                    <div class="enrolled_course">
+                                        <div class="flex-div">
+                                            <p>Object Oriented <br> Programming</p>
+                                            <i class="fa-solid fa-computer"></i>
+                                        </div>
+                                        <button class="enroll-button">View</button>
+                                    </div>
+                                    <div class="enrolled_course">
+                                        <div class="flex-div">
+                                            <p>Object Oriented <br> Programming</p>
+                                            <i class="fa-solid fa-chart-simple"></i>
+                                        </div>
+                                        <button class="enroll-button">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Profile Section -->
+                        <div id="profile" class="content-section hidden">
+                          <div class="profile_style">
+                            <h2>Profile</h2>
+                            <p>View and edit your profile here.</p>
+                          </div>
+                            
+                        </div>
+            
+                        <!-- Payments Section -->
+                        <div id="payments" class="content-section hidden">
+                            <h2>Payments</h2>
+                            <p>Manage your payment history.</p>
+                        </div>
+            
+                        <!-- Courses Section -->
+                        <div id="courses" class="content-section hidden">
+                            <h2>Courses</h2>
+                            <p>View and enroll in courses.</p>
+                        </div>
+            
+                        <!-- Schedule Section -->
+                        <div id="schedule" class="content-section hidden">
+                            <h2>Schedule</h2>
+                            <p>Check your class schedule.</p>
+                        </div>
+                           <!-- Result Section -->
+                           <div id="result" class="content-section hidden">
+                            <h2>Result</h2>
+                            <p>Check your class schedule.</p>
+                        </div>
+            
+                        <!-- Logout Section -->
+                        <div id="logout" class="content-section hidden">
+                            <h2>Logout</h2>
+                            <button onclick="logout()">Logout</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <script>
+                    function showSection(sectionId) {
+                        // Hide all sections
+                        document.querySelectorAll('.content-section').forEach(section => {
+                            section.classList.add('hidden');
+                        });
+            
+                        // Show the selected section
+                        document.getElementById(sectionId).classList.remove('hidden');
+                    }
+            
+                    // Optional logout function
+                    function logout() {
+                        alert("You have been logged out.");
+                    }
+                </script>
+            </body>
+            </html>
+            
             <div class="sidebar_items" onclick="showSection('logout')">
                 <i class="fa-solid fa-sign-out-alt"></i>
                 <p>Logout</p>
