@@ -1,3 +1,57 @@
 .profile_style{
-    font-size: 100px;
+    font-size: 20px;
+    width: 94%;
+    padding: 10px;
+}
+
+.upper-pro-style{
+    height: 350px;
+    width: 1300px;
+    background-color: rgb(148, 63, 148);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    
+}
+
+.upper-inside-box{
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+    width: 1200px;
+    background-color: white;
+    border-radius: 15px; 
+}
+    
+.upper-inside-box:hover{
+    box-shadow:  5px 5px 3px 3px rgb(161, 161, 161);
+
+
+}
+.lower{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lower-inside-box{
+    height: 300px;
+    width: 600px;
+    background-color:  white;
+    border-radius: 15px;
+
+}
+
+.lower-inside-box:hover{
+    box-shadow:  5px 5px 3px 3px rgb(161, 161, 161);
+}
+.lower-first-div{
+    display: flex;
+    justify-content: center;
+   padding-top: 23px;
+    height: 350px;
+    width: 640px;
+    background-color: rgb(148, 63, 148);
+    border-radius: 15px;
 }
