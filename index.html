@@ -1,3 +1,74 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="icon">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="sidebar_items" onclick="loadContent('dashboard.html')">
+          <i class="fa-solid fa-table"></i>
+          <p>Dashboard</p>
+        </div>
+        <div class="sidebar_items" onclick="loadContent('profile.html')">
+          <i class="fa-solid fa-user"></i>
+          <p>Profile</p>
+        </div>
+        <div class="sidebar_items" onclick="loadContent('payments.html')">
+          <i class="fa-solid fa-credit-card"></i>
+          <p>Payments</p>
+        </div>
+        <div class="sidebar_items" onclick="loadContent('schedule.html')">
+          <i class="fa-solid fa-calendar"></i>
+          <p>Schedule</p>
+        </div>
+        <div class="sidebar_items" onclick="loadContent('result.html')">
+          <i class="fa-solid fa-square-poll-vertical"></i>
+          <p>Result</p>
+        </div>
+        <div class="sidebar_items" onclick="logout()">
+          <i class="fa-solid fa-sign-out-alt"></i>
+          <p>Logout</p>
+        </div>
+      </div>
+
+      <div class="content" id="main-content">
+        
+      </div>
+    </div>
+
+    <script>
+      function loadContent(page) {
+        const contentDiv = document.getElementById("main-content");
+        fetch(page)
+          .then((response) => response.text())
+          .then((data) => {
+            contentDiv.innerHTML = data;
+          })
+          .catch((error) => console.error("Error loading page:", error));
+      }
+
+      function logout() {
+        alert("You have been logged out.");
+      }
+
+      
+      window.onload = () => loadContent("dashboard.html");
+    </script>
+  </body>
+</html> -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
