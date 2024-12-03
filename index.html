@@ -47,7 +47,7 @@
       <div class="content" id="main-content"></div>
     </div>
 
-    <script>
+    <!-- <script>
       function loadContent(page) {
         const contentDiv = document.getElementById("main-content");
         fetch(page)
@@ -62,6 +62,41 @@
         alert("You have been logged out.");
       }
 
+      window.onload = () => loadContent("dashboard.html");
+    </script> -->
+
+    <script>
+      function loadContent(page) {
+        const contentDiv = document.getElementById("main-content");
+
+        // Fetch the page content
+        fetch(page)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.text();
+          })
+          .then((data) => {
+            // Replace the content of the main-content div
+            contentDiv.innerHTML = data;
+          })
+          .catch((error) => {
+            console.error("Error loading page:", error);
+            contentDiv.innerHTML = `
+              <h2>Error</h2>
+              <p>Could not load the requested page: ${page}</p>
+              <p>${error.message}</p>
+            `;
+          });
+      }
+
+      function logout() {
+        alert("You have been logged out.");
+        // Redirect or clear session if needed
+      }
+
+      // Load the dashboard by default on page load
       window.onload = () => loadContent("dashboard.html");
     </script>
   </body>
