@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    
 }
 .welcome_text{
     padding-left: 100px;
@@ -41,7 +41,7 @@
 .common-text-style{
     font-size: 30px;
     font-weight: bold;
-    padding-top: 20px;
+    
     padding-bottom: 10px;
 }
 .finace-content{
@@ -146,4 +146,17 @@ padding-bottom: 10px;
 /* Show the active content section */
 .content-section {
     display: block;
+}
+
+
+.course {
+    display: flex;
+    gap: 80px; /* Add spacing between courses */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.enrolled_course {
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
 }
