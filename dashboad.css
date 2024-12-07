@@ -1,5 +1,7 @@
 
-* {
+
+
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,15 +17,16 @@
   }
   
   .content {
-    padding: 30px;
+    padding: 5%; /* Use relative units for padding */
     max-width: 1200px;
     margin: 0 auto;
   }
   
   /* Welcome Section */
   .welcome_dash {
+    width: 95%; /* Fully responsive width */
     margin: 20px 0;
-    padding: 30px;
+    padding: 3%; /* Use percentage padding */
     background: linear-gradient(135deg, #7e2a7e, #a741a7);
     color: white;
     border-radius: 20px;
@@ -35,27 +38,28 @@
   }
   
   .welcome_text {
+    flex: 1; /* Makes the text take up available space */
     max-width: 60%;
   }
   
   .welcome_text h2 {
-    font-size: 32px;
+    font-size: clamp(24px, 5vw, 32px); /* Scales with screen size */
     margin-bottom: 10px;
   }
   
   .welcome_text p {
-    font-size: 18px;
+    font-size: clamp(14px, 3vw, 18px); /* Scales with screen size */
     color: #f3e7fd;
   }
   
   .welcome_icon img {
-    height: 200px;
+    height: clamp(150px, 25vw, 200px); /* Flexible size */
     width: auto;
   }
   
   /* Finance Section */
   .common-text-style {
-    font-size: 26px;
+    font-size: clamp(18px, 4vw, 26px); /* Scales dynamically */
     font-weight: bold;
     margin: 40px 0 20px;
     text-align: center;
@@ -64,7 +68,7 @@
   
   .finace-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Dynamic grid */
     gap: 20px;
   }
   
@@ -84,28 +88,24 @@
   }
   
   .finance-box i {
-    font-size: 50px;
+    font-size: clamp(30px, 5vw, 50px); /* Resizes with viewport */
     color: #7e2a7e;
     margin-bottom: 10px;
   }
   
   .p-bold {
-    font-size: 22px;
+    font-size: clamp(16px, 4vw, 22px); /* Scales dynamically */
     font-weight: bold;
     color: #333;
   }
   
   #p1,
   #p2 {
-    font-size: 20px;
+    font-size: clamp(14px, 3vw, 20px); /* Flexible size */
     color: #7e2a7e;
   }
   
-
-  
- 
-  
-  
+  /* Fade-In Animation */
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -120,7 +120,7 @@
   /* Responsive Design */
   @media (max-width: 768px) {
     .welcome_dash {
-      flex-direction: column;
+      flex-direction: column; /* Stack layout on smaller screens */
       text-align: center;
     }
   
@@ -130,11 +130,7 @@
     }
   
     .welcome_icon img {
-      height: 150px;
-    }
-  
-    .enrolled_course {
-      width: 100%;
+      height: clamp(100px, 15vw, 150px);
     }
   }
   
