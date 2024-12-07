@@ -1,12 +1,14 @@
 .content {
-   
+ 
     padding-left: 100px;
     
 }
 
 .welcome_dash{
+    padding-top: 20px;
+    padding-bottom: 30px;
     height: 230px;
-    width: 1300px;
+    width: 90%;
     background-color: rgb(90, 14, 90);
     color: white;
     
@@ -19,8 +21,6 @@
 .welcome_text{
     padding-left: 100px;
     font-size: 30px;
-   
-    
 
 }
 
@@ -41,6 +41,7 @@
 .common-text-style{
     font-size: 30px;
     font-weight: bold;
+    padding-top: 30px;
     
     padding-bottom: 10px;
 }
@@ -50,7 +51,7 @@
     justify-content: space-evenly;
 }
 .finance-box{
-   
+   padding-top: 20px;
     height: 220px;
     width: 300px;
     border-radius: 15px;
