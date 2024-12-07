@@ -37,7 +37,7 @@
   
   .sidebar {
   
-    width: 250px;
+    width: 200px;
     background-color: rgb(90, 14, 90);
     color: white;
     padding: 20px 0;
@@ -62,13 +62,13 @@
   }
   
   .sidebar ul li a {
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     color: white;
     display: block;
     padding: 10px 20px;
     border-radius: 4px;
-    /* transition: background 0.3s; */
+    
   }
   
   .sidebar ul li a.active, .sidebar ul li a:hover {
@@ -81,4 +81,6 @@
     padding: 20px;
     width: calc(100% - 250px);
   }
+   
+
   

@@ -92,10 +92,8 @@
 }
 /* bottom */
 .enrolled_course{
-padding: 10px;
-
-  
-height: 80px;
+padding-top: 20px;
+height: 100px;
 width: 500px;
 background-color: rgb(240, 223, 240);
 border-radius: 15px;
