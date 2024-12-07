@@ -1,4 +1,4 @@
-
+/* 
 .payment-padding{
     padding-top: 60px;
 }
@@ -52,10 +52,142 @@
     font-weight: bold;
 }
 
-/* .table-1 tr:nth-child(even) {
-    background-color: #f9f9f9;
-} */
+
 
 .table-1 tr:hover {
     background-color: rgb(134, 60, 134);
-}
+} */
+
+/* General Layout */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(to bottom, #320b47, #190423);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  
+  .payment-padding {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Upper Payment Box */
+  .upper-box-payment {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background: linear-gradient(135deg, #5a0e5a, #a020a0);
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 1200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .upper-box-payment:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+  }
+  
+  .content-line {
+    flex: 1;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .content-line:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-10px);
+  }
+  
+  /* Payment Table Section */
+  .payment-table {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+   
+  }
+  
+  .table-1 {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  .table-1 th,
+  .table-1 td {
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .table-1 th {
+    background: linear-gradient(135deg, #5a0e5a, #8a128a);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .table-1 td {
+    background: rgba(255, 255, 255, 0.05);
+    color: black;
+  }
+  
+  .table-1 tbody tr:nth-child(even) td {
+    background: rgba(255, 255, 255, 0.08);
+  }
+  
+  .table-1 tbody tr:hover td {
+    background: #832a83;;
+   color: #fff;
+    font-weight: bold;
+    transform: scale(1.01);
+  }
+  
+  /* Advanced Hover Effects for Table Rows */
+  .table-1 tbody tr:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Table Responsive Design */
+  @media (max-width: 768px) {
+    .upper-box-payment {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .content-line {
+      font-size: 16px;
+      padding: 15px;
+    }
+  
+    .table-1 th,
+    .table-1 td {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
