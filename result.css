@@ -1,53 +1,119 @@
-.result-main{
+.result-main {
     padding-top: 30px;
-}
-
-
-.result-section{
-   height: 330px;
-    width: 92%;
-    padding: 20px;
-}
-
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .result-section {
-    margin-bottom: 20px;
-    background: rgb(102, 12, 102);
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    width: 90%;
+    padding: 25px;
+    background: linear-gradient(135deg, rgb(102, 12, 102), rgb(134, 60, 134));
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
 }
 
 .result-section h2 {
-    padding-top: 10px;
-    padding-bottom: 20px;
-    font-size: 25px;
-    margin-bottom: 15px;
-    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
 }
 
 .result-section table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.result-section  table, th, td {
-    border: 1px solid white;
+.result-section table th,
+.result-section table td {
+    padding: 12px 8px;
     text-align: center;
+    font-size: 14px;
 }
 
- .result-section  th, td {
-    padding: 10px;
-    font-size: 16px;
+.result-section table th {
+    background-color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
     color: white;
 }
 
-.result-section   p {
-    color: white;
-    font-size: 26px;
+.result-section table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
 }
+
+.result-section table tr:hover {
+    background-color: rgb(87, 13, 87);
+}
+
+.result-section p {
+    font-size: 18px;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #ffccff;
+}
+
+.result-section table td {
+    color: #f0f0f0;
+}
+
+.result-section table th,
+.result-section table td {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .result-section {
+        padding: 15px;
+    }
+
+    .result-section h2 {
+        font-size: 20px;
+    }
+
+    .result-section table th, 
+    .result-section table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .result-section p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .result-section {
+        padding: 10px;
+    }
+
+    .result-section h2 {
+        font-size: 18px;
+    }
+
+    .result-section table {
+        font-size: 10px;
+    }
+
+    .result-section p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .result-section table th,
+    .result-section table td {
+        font-size: 10px;
+        padding: 6px;
+    }
+}
+
+
+
