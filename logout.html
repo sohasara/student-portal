@@ -1,2 +1,24 @@
-<h1>Logout Page</h1>
-<p>You have successfully logged out. Have a great day!</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logout Page</title>
+    <link rel="stylesheet" href="logout.css" />
+  </head>
+  <body>
+    <div class="logout-container">
+      <h1>Logout Page</h1>
+      <p>You have successfully logged out. Have a great day!</p>
+      <button id="logout-btn">Logout</button>
+    </div>
+
+    <script>
+      document
+        .getElementById("logout-btn")
+        .addEventListener("click", function () {
+          window.location.href = "login.html";
+        });
+    </script>
+  </body>
+</html>
