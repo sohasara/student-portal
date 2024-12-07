@@ -1,6 +1,4 @@
 
-
-
    * {
     margin: 0;
     padding: 0;
@@ -20,6 +18,9 @@
     padding: 5%; /* Use relative units for padding */
     max-width: 1200px;
     margin: 0 auto;
+  }
+  #dashboard{
+    padding-left: 10.8%;
   }
   
   /* Welcome Section */
@@ -99,8 +100,8 @@
     color: #333;
   }
   
-  #p1,
-  #p2 {
+  .p1
+  {
     font-size: clamp(14px, 3vw, 20px); /* Flexible size */
     color: #7e2a7e;
   }
