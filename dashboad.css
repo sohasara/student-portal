@@ -26,7 +26,7 @@
   /* Welcome Section */
   .welcome_dash {
     width: 95%; /* Fully responsive width */
-    margin: 20px 0;
+    margin: 20px ;
     padding: 3%; /* Use percentage padding */
     background: linear-gradient(135deg, #7e2a7e, #a741a7);
     color: white;
@@ -35,32 +35,32 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 0.5s ease-in-out;
+   
   }
   
   .welcome_text {
-    flex: 1; /* Makes the text take up available space */
+    flex: 1; 
     max-width: 60%;
   }
   
   .welcome_text h2 {
-    font-size: clamp(24px, 5vw, 32px); /* Scales with screen size */
+    font-size: clamp(24px, 5vw, 32px);
     margin-bottom: 10px;
   }
   
   .welcome_text p {
-    font-size: clamp(14px, 3vw, 18px); /* Scales with screen size */
+    font-size: clamp(14px, 3vw, 18px); 
     color: #f3e7fd;
   }
   
   .welcome_icon img {
-    height: clamp(150px, 25vw, 200px); /* Flexible size */
+    height: clamp(150px, 25vw, 200px); 
     width: auto;
   }
   
   /* Finance Section */
   .common-text-style {
-    font-size: clamp(18px, 4vw, 26px); /* Scales dynamically */
+    font-size: clamp(18px, 4vw, 26px); 
     font-weight: bold;
     margin: 40px 0 20px;
     text-align: center;
@@ -69,7 +69,7 @@
   
   .finace-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Dynamic grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
   }
   
@@ -85,43 +85,34 @@
   
   .finance-box:hover {
     transform: translateY(-5px);
+    border: #7e2a7e 1px solid;
     box-shadow: 0 15px 25px rgba(90, 14, 90, 0.2);
   }
   
   .finance-box i {
-    font-size: clamp(30px, 5vw, 50px); /* Resizes with viewport */
+    font-size: clamp(30px, 5vw, 50px);
     color: #7e2a7e;
     margin-bottom: 10px;
   }
   
   .p-bold {
-    font-size: clamp(16px, 4vw, 22px); /* Scales dynamically */
+    font-size: clamp(16px, 4vw, 22px);
     font-weight: bold;
     color: #333;
   }
   
   .p1
   {
-    font-size: clamp(14px, 3vw, 20px); /* Flexible size */
+    font-size: clamp(14px, 3vw, 20px); 
     color: #7e2a7e;
   }
   
-  /* Fade-In Animation */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+ 
   
   /* Responsive Design */
   @media (max-width: 768px) {
     .welcome_dash {
-      flex-direction: column; /* Stack layout on smaller screens */
+      flex-direction: column; 
       text-align: center;
     }
   

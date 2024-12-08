@@ -130,9 +130,11 @@ body {
   }
   
   .table-1 {
+    background-color: #832a83;
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
+    color: #ffffff;
   }
   
   .table-1 th,
@@ -152,15 +154,15 @@ body {
   
   .table-1 td {
     background: rgba(255, 255, 255, 0.05);
-    color: black;
+    color: rgb(238, 232, 232);
   }
   
   .table-1 tbody tr:nth-child(even) td {
-    background: rgba(255, 255, 255, 0.08);
+    background:  #9c289c;;;
   }
   
   .table-1 tbody tr:hover td {
-    background: #832a83;;
+    background: #832a83;
    color: #fff;
     font-weight: bold;
     transform: scale(1.01);
