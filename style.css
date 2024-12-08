@@ -44,13 +44,13 @@ justify-content: center;
 
 /* Sidebar */
 .sidebar {
-  width: 200px;
+  width: 220px;
   background-color: rgb(90, 14, 90);
   color: white;
   padding: 20px ;
   height: 100vh;
   position: fixed;
-  font-size: 1rem;
+  font-size: small;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,11 +112,14 @@ justify-content: center;
   }
 }
 
+ 
+/* Hide the sidebar by default on small screens */
 @media (max-width: 480px) {
   .sidebar {
     position: absolute;
     width: 200px; /* Full size when open */
     left: -200px; /* Hidden by default */
+    transition: left 0.3s ease-in-out;
   }
 
   .sidebar.open {
@@ -141,10 +144,11 @@ justify-content: center;
   }
 }
 
+
 .sidebar ul li a:hover {
   background-color: #7a287a;
   color: #fff;
-}
+} 
 
 
 
