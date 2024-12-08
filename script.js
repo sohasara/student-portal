@@ -1,7 +1,7 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll(".sidebar ul li a");
   const contentContainer = document.getElementById("content-container");
+  const loadingIndicator = document.getElementById("loading-indicator");
 
   // Load default dashboard content
   loadPage("dashboard.html");
@@ -13,8 +13,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Handle logout separately
       if (link.id === "logout") {
-        // Redirect to login page
-        window.location.href = "login.html";
+        // Show loading indicator
+        loadingIndicator.style.display = "flex";
+
+        // Simulate delay and redirect to login page
+        setTimeout(() => {
+          window.location.href = "login.html";
+        }, 1500); // Adjust the delay as needed
         return;
       }
 
