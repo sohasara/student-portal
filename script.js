@@ -1,4 +1,4 @@
-// JavaScript to dynamically load content
+
 document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll(".sidebar ul li a");
   const contentContainer = document.getElementById("content-container");
@@ -10,6 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
   links.forEach(link => {
     link.addEventListener("click", (event) => {
       event.preventDefault();
+
+      // Handle logout separately
+      if (link.id === "logout") {
+        // Redirect to login page
+        window.location.href = "login.html";
+        return;
+      }
 
       // Remove active class from all links
       links.forEach(item => item.classList.remove("active"));
