@@ -37,14 +37,46 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Function to load content into the container
   function loadPage(page) {
+    console.log(`Loading page: ${page}`);
+
     fetch(page)
-      .then(response => response.text())
-      .then(data => {
-        contentContainer.innerHTML = data;
-      })
-      .catch(error => {
-        contentContainer.innerHTML = "<p>Error loading page.</p>";
-        console.error("Error:", error);
-      });
-  }
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Failed to load ${page}: ${response.statusText}`);
+            }
+            return response.text();  // Extract the HTML as text
+        })
+        .then(data => {
+            // Inject the fetched HTML content into the page
+            contentContainer.innerHTML = data;
+            console.log("HTML Content loaded into container.");
+
+            const scriptPath = page.replace(".html", ".js");  // Create the corresponding JS path
+            console.log(`Loading script: ${scriptPath}`);
+            loadScript(scriptPath);  // Load the JavaScript file
+        })
+        .catch(error => {
+            contentContainer.innerHTML = "<p>Error loading page.</p>";
+            console.error("Error:", error);
+        });
+}
+
+
+  // Function to load the JavaScript for the page dynamically
+  function loadScript(scriptPath) {
+    const script = document.createElement("script");
+    script.src = scriptPath;  // Ensure the path to the JS file is correct
+
+    // Log to verify the script load
+    script.onload = () => {
+        console.log(`${scriptPath} loaded successfully.`);
+    };
+
+    script.onerror = () => {
+        console.error(`Error loading script: ${scriptPath}`);
+    };
+
+    document.body.appendChild(script);  // Append the script tag to the body to load the JS
+}
+
 });
