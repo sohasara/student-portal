@@ -33,7 +33,7 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
         if (username === user.stu_id && password === user.password) {
           i = 1;
           localStorage.clear();
-          localStorage.setItem('stu_id',user.stu_id); // Saves the username as stu_id
+          localStorage.setItem('user',JSON.stringify(user)); // Saves the username as stu_id
 
           // Navigate to the dashboard
           window.location.href = "index.html";
