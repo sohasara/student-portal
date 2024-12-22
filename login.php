@@ -5,7 +5,7 @@ include 'connection.php'; // Assuming db_connection.php contains the database co
 
     // Query to find the user based on the username (password will be validated later)
    // SQL query to fetch data
-$sql = "SELECT * FROM student";
+$sql = "SELECT id, stu_id,first_name,password FROM student";
 $result = $conn->query($sql);
 
 $data = [];
