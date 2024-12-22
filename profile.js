@@ -39,7 +39,10 @@ function profile() {
                     elements[7].textContent = user.mothers_name;
                     elements[8].textContent = user.mothers_pro;
 
-                    elements[9].textContent = user.dob;
+                    const date = new Date(user.dob);
+                    const options = { day: '2-digit', month: 'long', year: 'numeric' };
+                    const formattedDate = date.toLocaleDateString('en-US', options);
+                    elements[9].textContent = formattedDate;
                     elements[10].textContent = user.religion;
                     elements[11].textContent = user.gender;
                     elements[12].textContent = user.nationality;
