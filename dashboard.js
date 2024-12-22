@@ -46,8 +46,8 @@ function run() {
                         elements[0].textContent= user.total_bill;
                         elements[1].textContent = user.total_paid;
                         elements[2].textContent = user.total_bill - user.total_paid;
-                        localStorage.setItem("hi",JSON.stringify(user));
-                        console.log(user.total_fee);
+                        
+                        console.log(JSON.stringify(user));
                         
                     }
 

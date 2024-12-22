@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c187937e-cbad-45ef-b883-0736906ae6ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/green.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
-    </list>
+    <list default="true" id="c187937e-cbad-45ef-b883-0736906ae6ee" name="Changes" comment="nothing change(auto)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,9 +51,9 @@
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;file__separation&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;php&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/php&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/student-portal&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
 }</component>
@@ -75,6 +71,82 @@
       <option name="presentableId" value="Default" />
       <updated>1731302648441</updated>
     </task>
+    <task id="LOCAL-00001" summary="save in loaclstorage as user">
+      <option name="closed" value="true" />
+      <created>1734798759608</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734798759608</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add script and span tag in name">
+      <option name="closed" value="true" />
+      <created>1734798797016</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734798797016</updated>
+    </task>
+    <task id="LOCAL-00003" summary="append script">
+      <option name="closed" value="true" />
+      <created>1734798827205</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734798827205</updated>
+    </task>
+    <task id="LOCAL-00004" summary="make js file for dashboard">
+      <option name="closed" value="true" />
+      <created>1734798850460</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734798850460</updated>
+    </task>
+    <task id="LOCAL-00005" summary="bill option add">
+      <option name="closed" value="true" />
+      <created>1734880836934</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1734880836934</updated>
+    </task>
+    <task id="LOCAL-00006" summary="change query">
+      <option name="closed" value="true" />
+      <created>1734880852896</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1734880852896</updated>
+    </task>
+    <task id="LOCAL-00007" summary="payment php">
+      <option name="closed" value="true" />
+      <created>1734880873208</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734880873208</updated>
+    </task>
+    <task id="LOCAL-00008" summary="nothing change(auto)">
+      <option name="closed" value="true" />
+      <created>1734880898495</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1734880898495</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="save in loaclstorage as user" />
+    <MESSAGE value="add script and span tag in name" />
+    <MESSAGE value="append script" />
+    <MESSAGE value="make js file for dashboard" />
+    <MESSAGE value="bill option add" />
+    <MESSAGE value="change query" />
+    <MESSAGE value="payment php" />
+    <MESSAGE value="nothing change(auto)" />
+    <option name="LAST_COMMIT_MESSAGE" value="nothing change(auto)" />
   </component>
 </project>
