@@ -24,11 +24,14 @@ $stu_id = $data['stu_id'];
     s.stu_id AS stu_id,
     s.full_name AS stu_name,
     s.program,
-    s.batch
+    s.batch,
+    SUM(r.Credit) AS total_credits
 FROM 
     profile p
 JOIN 
     student s ON p.stu_id = s.stu_id
+JOIN 
+    result r ON p.stu_id = r.stu_id
 WHERE 
     p.stu_id = ?;
 ";

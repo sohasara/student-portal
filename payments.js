@@ -33,9 +33,10 @@ function payment() {
                     elements[2].textContent = user.total_bill;
                     elements[3].textContent = user.total_paid;
 
-                    var i = user.total_bill - user.total_paid;
+                    var i = (user.total_bill - user.total_paid);
 
-                    if (i > 0) {
+
+                    if (i >= 0) {
                         elements[4].textContent = i;
                         elements[5].textContent = 0;
                     } else {
@@ -44,22 +45,26 @@ function payment() {
                     }
                     var array = [user.first, user.second, user.third];
                     var payble =[];
-                    if(user.total_bill - user.total_paid <= 0){
+
+                    var bill = user.p_bill + (i-(user.p_bill - user.p_paid));
+                    // console.log(bill);
+                    // bill= bill - user.p_paid;
+                    if(bill - user.p_paid <= 0){
                         payble = [0,0,0];
                     }else{
-                        var j = user.total_bill - user.total_paid;
+                        var j = bill - user.p_paid;
 
-                        if(j<=user.total_bill/3){
+                        if(j<=bill/3){
                             payble = [0,0,j];
                         }else{
-                            payble[2]=user.total_bill/3;
-                            j = j- user.total_bill/3;
-                            if(j<=user.total_bill/3){
+                            payble[2]=j;
+                            j = j- bill/3;
+                            if(j<=bill/3){
                                 payble[1]=j;
                                 payble[0]=0;
                             }else{
                                 payble[1]=j;
-                                j = j- user.total_bill/3;
+                                j = j- bill/3;
                                 payble[0]=j;
                             }
 
@@ -73,8 +78,8 @@ function payment() {
                         <td>${i+1}</td>
                         <td>${i+1} Installment</td>
                         <td>${array[i]}</td>
-                        <td>${(user.total_bill/3).toFixed(2)}</td>
-                        <td>${payble[i]}</td>
+                        <td>${(user.p_bill/3).toFixed(2)}</td>
+                        <td>${payble[i].toFixed(2)}</td>
                         <td>${(new Date() > new Date(array[i])) ? (payble[i] != 0) ? 500:0:0}</td>
                        
                     `;
@@ -82,7 +87,7 @@ function payment() {
                     }
 
 
-                    console.log(array);
+                    
                     console.log(JSON.stringify(user));
 
                 }

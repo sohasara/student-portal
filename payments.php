@@ -10,7 +10,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 $stu_id = $data['stu_id'];
 
 
-    $sql = "SELECT payment.id,payment.total_fee,payment.total_bill,payment.total_paid,payment.discount,installment.first,installment.second,installment.third FROM payment JOIN installment ON payment.semester = installment.semester WHERE payment.stu_id =?";
+    $sql = "SELECT payment.id,payment.p_bill,payment.p_paid,payment.p_dis,payment.total_fee,payment.total_bill,payment.total_paid,payment.discount,installment.first,installment.second,installment.third FROM payment JOIN installment ON payment.semester = installment.semester WHERE payment.stu_id =? ORDER BY 
+    payment.semester DESC  -- Assuming semester indicates the order, most recent first
+LIMIT 1;";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $stu_id);
     $stmt->execute();
