@@ -73,7 +73,7 @@ function payment() {
                         <td>${i+1}</td>
                         <td>${i+1} Installment</td>
                         <td>${array[i]}</td>
-                        <td>${user.total_bill/3}</td>
+                        <td>${(user.total_bill/3).toFixed(2)}</td>
                         <td>${payble[i]}</td>
                         <td>${(new Date() > new Date(array[i])) ? (payble[i] != 0) ? 500:0:0}</td>
                        
