@@ -10,7 +10,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 $stu_id = $data['stu_id'];
 
 
-    $sql = "SELECT payment.id,payment.total_fee,payment.total_bill,payment.total_paid,payment.discount,installment.first,installment.second,installment.third FROM payment JOIN installment ON payment.semester = installment.semester WHERE payment.stu_id =?";
+    $sql = "SELECT 
+    stu_id,
+    Semester,
+    Course_Code,
+    Course_Title,
+    Grade,
+    Credit,
+    Point
+FROM 
+    result
+WHERE stu_id = ?
+";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $stu_id);
     $stmt->execute();
@@ -27,8 +38,8 @@ $stu_id = $data['stu_id'];
     echo json_encode($payments);
 }else{
     // Send error response if no rows are found
-    header('Content-Type: application/json');
-    echo json_encode(["id" => 0,"total_fee" => 0,"total_bill" => 0,"total_paid" => 0,"discount" => 0,"first" => 0,"second" => 0,"third" => 0]);
+    header('Content-Type: application/json', true, 404);
+    echo json_encode(["error" => "Data not found"]);
 }
 } else {
     header('Content-Type: application/json', true, 404);
@@ -38,7 +49,7 @@ $stu_id = $data['stu_id'];
     header('Content-Type: application/json');
 
     // header('Content-Type: application/json', true, 404);
-    echo json_encode(["error" => "stu_id not provided..2"]);
+    echo json_encode(["error" => "Not POST method..!"]);
 }
 
 $conn->close();

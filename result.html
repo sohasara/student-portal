@@ -9,67 +9,43 @@
   <body>
     <div id="result" class="content-section hidden">
       <div class="result-main">
-        <div class="result-section">
-          <h2>Current Semester Result</h2>
-          <div class="current-result">
-            <table>
-              <tr>
-                <th>Course Code</th>
-                <th>Course Title</th>
-                <th>Grade</th>
-                <th>Credits</th>
-              </tr>
-              <tr>
-                <td>CSE 305</td>
-                <td>Data Structures</td>
-                <td>A</td>
-                <td>3.0</td>
-              </tr>
-              <tr>
-                <td>MAT 201</td>
-                <td>Calculus II</td>
-                <td>B+</td>
-                <td>3.0</td>
-              </tr>
-              <tr>
-                <td>PHY 101</td>
-                <td>Physics I</td>
-                <td>A-</td>
-                <td>3.0</td>
-              </tr>
-            </table>
-            <p><strong>GPA:</strong> 3.67</p>
-          </div>
-        </div>
         <!-- Result History Box -->
         <div class="result-section">
-          <h2>Result History</h2>
+          <h2>Semester Wise Result</h2>
           <div class="result-history">
             <table>
               <tr>
                 <th>Semester</th>
-                <th>GPA</th>
+                <th>CGPA</th>
                 <th>Credits Earned</th>
               </tr>
+              <tbody id="t1">
+              
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="result-section">
+          <h2>Result History</h2>
+          <div class="current-result">
+            <table>
               <tr>
-                <td>Spring 2024</td>
-                <td>3.45</td>
-                <td>15</td>
+                <th>Semester</th>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>Grade</th>
+                <th>Credits</th>
+                <th>Points</th>
               </tr>
-              <tr>
-                <td>Fall 2023</td>
-                <td>3.60</td>
-                <td>16</td>
-              </tr>
-              <tr>
-                <td>Summer 2023</td>
-                <td>3.50</td>
-                <td>14</td>
-              </tr>
+              <tbody id="t2">
+              
+              </tbody>
             </table>
           </div>
         </div>
       </div>
     </div>
+    <script src="result.js" defer></script>
   </body>
 </html>
