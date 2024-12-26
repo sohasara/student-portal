@@ -38,11 +38,51 @@ function payment() {
                     if (i > 0) {
                         elements[4].textContent = i;
                         elements[5].textContent = 0;
-                    }else{
+                    } else {
                         elements[4].textContent = 0;
                         elements[5].textContent = i;
                     }
+                    var array = [user.first, user.second, user.third];
+                    var payble =[];
+                    if(user.total_bill - user.total_paid <= 0){
+                        payble = [0,0,0];
+                    }else{
+                        var j = user.total_bill - user.total_paid;
 
+                        if(j<=user.total_bill/3){
+                            payble = [0,0,j];
+                        }else{
+                            payble[2]=user.total_bill/3;
+                            j = j- user.total_bill/3;
+                            if(j<=user.total_bill/3){
+                                payble[1]=j;
+                                payble[0]=0;
+                            }else{
+                                payble[1]=j;
+                                j = j- user.total_bill/3;
+                                payble[0]=j;
+                            }
+
+                        }
+
+                    }
+                    const tableBody = document.getElementById('t');
+                    for (var i = 0; i < 3; i++) {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                        <td>${i+1}</td>
+                        <td>${i+1} Installment</td>
+                        <td>${array[i]}</td>
+                        <td>${user.total_bill/3}</td>
+                        <td>${payble[i]}</td>
+                        <td>${(new Date() > new Date(array[i])) ? (payble[i] != 0) ? 500:0:0}</td>
+                       
+                    `;
+                        tableBody.appendChild(row);
+                    }
+
+
+                    console.log(array);
                     console.log(JSON.stringify(user));
 
                 }
